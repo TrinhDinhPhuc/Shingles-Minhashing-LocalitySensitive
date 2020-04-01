@@ -49,39 +49,39 @@ and should be extracted in the /data directory
 
 K shingles input
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/kshingles.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/data/doc/kshingles.jpg)
 
 3 shingles output
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/shingles.PNG)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/shingles.PNG)
 
 Minhashing input
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/hashfunctions.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/hashfunctions.jpg)
 
 Minhashing output
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/minhashing.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/minhashing.jpg)
 
 LSH input
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/lsh.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/lsh.jpg)
 
 Shingle similarity 
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/jaccard%20sim.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/jaccard%20sim.jpg)
 
 Signature similarity 
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/shingle%20sim.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/shingle%20sim.jpg)
 
 LSH similarity
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/lsh%20sim.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/lsh%20sim.jpg)
 
 Time consumption
 
-![alt text](https://github.com/evagian/Document-similarity-K-shingles-minhashing-LSH-python/blob/master/data/doc/time.jpg)
+![alt text](https://github.com/TrinhDinhPhuc/Shingles-Minhashing-LocalitySensitive/tree/master/data/doc/time.jpg)
 
 
 
