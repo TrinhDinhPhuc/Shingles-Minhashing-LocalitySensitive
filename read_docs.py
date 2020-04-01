@@ -1,3 +1,4 @@
+
 from bs4 import BeautifulSoup
 import sys
 import os.path
@@ -5,7 +6,6 @@ import string
 import time
 import re
 
-# noinspection PyGlobalUndefined
 class Read_sgm():
     def __init__(self):
         super().__init__()
