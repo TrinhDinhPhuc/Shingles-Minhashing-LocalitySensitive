@@ -15,3 +15,4 @@ theString = "The Covid-19 crisis has now reached a new critical phase where publ
 shingleLength = 3
 tokens = theString.split()
 print ([tokens[i:i+shingleLength] for i in range(len(tokens) - shingleLength + 1) if len(tokens[i]) < 4])
+
