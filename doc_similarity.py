@@ -47,22 +47,22 @@ d = {}
 t = {}
 t0 = time.time()
 for value in documents:
-
-
     # create a dictionary where key=docid and value=document text
     d[i] = value
     # split text into words
     d[i] = re.sub("[^\w]", " ", d[i]).split()
-
+    print (d[i])
+    print()
+    print()
     # remove rows with empty values from dictionary d
     if d[i]:
         i = i + 1
     else:
         del d[i]
         del body[i]
-
+sys.exit(1)
 # =============================================================================
-#               Convert Documents To Sets of Shingles
+#            Convert Documents To Sets of Shingles
 # =============================================================================
 
 docsAsShingleSets = {}

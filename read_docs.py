@@ -33,6 +33,7 @@ class Read_sgm():
         soup = BeautifulSoup(self.data, "html.parser")  # parse all the html data
         bodies = soup.findAll('body')  # only get the body
         i = 0
+        global body
         for body in bodies:
             self.printedbodies[i] = body
             self.documents.append(
@@ -45,3 +46,23 @@ class Read_sgm():
         print('Transforming data took %.2f sec.' % (time.time() - self.t0))
         print('The number of documents read was: ' + str(len(self.documents)))
         return self.documents
+
+    def convert_to_dict(self,documents):
+        i = 0
+        d = {}
+        t = {}
+        t0 = time.time()
+        for value in documents:
+            # create a dictionary where key=docid and value=document text
+            d[i] = value
+            # split text into words
+            d[i] = re.sub("[^\w]", " ", d[i]).split()
+            # remove rows with empty values from dictionary d
+            if d[i]:
+                i = i + 1
+            else:
+                del d[i]
+                del body[i]
+                print(body[i] )
+                print("never happened~~")
+        return d
