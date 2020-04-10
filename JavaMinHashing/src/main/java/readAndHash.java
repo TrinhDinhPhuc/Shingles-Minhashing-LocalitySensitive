@@ -2,12 +2,8 @@ import java.io.File;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class read_file { //cannot change name
+public class readAndHash {
     private Scanner x;
-//    String dataFile = "/../MinHash/data/articles_" + String.valueOf(numDocs) + ".train";
-//    String truthFile = "/../MinHash/data/articles_" + String.valueOf(numDocs) + ".truth";
-//    String current_Directory = System.getProperty("user.dir");
-
     public void openFile(String fileName){
         try {
             x = new Scanner(new File(fileName));
