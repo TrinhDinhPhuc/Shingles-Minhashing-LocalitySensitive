@@ -115,9 +115,6 @@ for i in range(0, numDocs):
     shingle = words[index] + " " + words[index + 1] + " " + words[index + 2]
     # Hash the shingle to a 32-bit integer.
     crc = binascii.crc32(shingle) & 0xffffffff
-    print(crc)
-    print(type(crc))
-    sys.exit(1)
     # Add the hash value to the list of shingles for the current document. 
     # Note that set objects will only add the value to the set if the set 
     # doesn't already contain it. 
@@ -128,7 +125,7 @@ for i in range(0, numDocs):
   
   # Count the number of shingles across all documents.
   totalShingles = totalShingles + (len(words) - 2)
-
+print(totalShingles)
 sys.exit(1)
 # Close the data file.  
 f.close()  

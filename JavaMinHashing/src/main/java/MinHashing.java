@@ -12,16 +12,15 @@ public class MinHashing {
         //File Truth
         readAndHash truthF = new readAndHash();
         Scanner dataTruth = truthF.openFile(current_Directory+truthFile);
-        HashMap<String,String> a = truthF.hashToDict(dataTruth);
-//        System.out.println(a);
+        HashMap<String,String> TruthFile = truthF.hashToDict(dataTruth);
 
         readAndHash dataF = new readAndHash();
         Scanner documents  = dataF.openFile(current_Directory+dataFile);
-//        dataF.showFile(documents);
         docToShinglingSets objshingles = new docToShinglingSets();
         HashMap<String, Set<Long>> singlesSets = objshingles.DocsAsShingleSets(numDocs,documents);
-        writelog wl = new writelog();
-        wl.writeToAFile("log.txt",singlesSets.toString());
+
+//        writelog wl = new writelog();
+//        wl.writeToAFile("log.txt",singlesSets.toString());
 
     }
 }

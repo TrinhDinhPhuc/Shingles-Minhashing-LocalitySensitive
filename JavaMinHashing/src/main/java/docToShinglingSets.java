@@ -51,9 +51,9 @@ public class docToShinglingSets {
             docsAsShingleSets.put(docID,shinglesInDoc);
 
             //count the number of shingles across all documents
-            Integer totalShingles = 0;
-            totalShingles += words.size()-2;
+            totalShingles =  totalShingles + words.size()-2;
         }
+        System.out.println(totalShingles);
         return docsAsShingleSets;
     }
 }
