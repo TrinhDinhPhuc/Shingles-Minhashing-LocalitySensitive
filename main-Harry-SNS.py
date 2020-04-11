@@ -10,6 +10,10 @@ if __name__ == '__main__':
     obj = Read_sgm()
     data = obj.read_sgm()
     documents = obj.transformation()
-    print(len(documents))
+    d = obj.convert_to_dict(documents)
+    # Write file
+    f = open("save_results.txt","w")
+    f.write(str(d))
+    f.close()
 else:
     print(__name__)

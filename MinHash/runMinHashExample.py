@@ -93,18 +93,15 @@ docNames = []
 t0 = time.time()
 
 totalShingles = 0
-print(dataFile)
 print(f.readline().split(" "))
-sys.exit(1)
 for i in range(0, numDocs):
   
   # Read all of the words (they are all on one line) and split them by white
   # space.
   words = f.readline().split(" ") 
-  print(words) 
-  # Retrieve the article ID, which is the first word on the line.  
   docID = words[0]
-  
+  print(type(docID))
+  sys.exit(1)
   # Maintain a list of all document IDs.  
   docNames.append(docID)
     
