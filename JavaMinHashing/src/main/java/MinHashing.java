@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Set;
 
 public class MinHashing {
     static Integer numDocs = 1000;
@@ -18,6 +19,9 @@ public class MinHashing {
         Scanner documents  = dataF.openFile(current_Directory+dataFile);
 //        dataF.showFile(documents);
         docToShinglingSets objshingles = new docToShinglingSets();
-        HashMap<String,String> singlesSets = objshingles.DocsAsShingleSets(numDocs,documents);
+        HashMap<String, Set<Long>> singlesSets = objshingles.DocsAsShingleSets(numDocs,documents);
+        writelog wl = new writelog();
+        wl.writeToAFile("log.txt",singlesSets.toString());
+
     }
 }

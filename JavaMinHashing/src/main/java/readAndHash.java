@@ -29,6 +29,7 @@ public class readAndHash {
             hashMap.put(part1, part2);
             hashMap.put(part2, part1);
         }
+        x.close();
         return hashMap;
     }
 }

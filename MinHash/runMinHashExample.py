@@ -93,15 +93,12 @@ docNames = []
 t0 = time.time()
 
 totalShingles = 0
-print(f.readline().split(" "))
 for i in range(0, numDocs):
   
   # Read all of the words (they are all on one line) and split them by white
   # space.
   words = f.readline().split(" ") 
   docID = words[0]
-  print(type(docID))
-  sys.exit(1)
   # Maintain a list of all document IDs.  
   docNames.append(docID)
     
@@ -116,13 +113,11 @@ for i in range(0, numDocs):
   for index in range(0, len(words) - 2):
     # Construct the shingle text by combining three words together.
     shingle = words[index] + " " + words[index + 1] + " " + words[index + 2]
-
     # Hash the shingle to a 32-bit integer.
-    #print(type(shingle))
-    #print(shingle)
     crc = binascii.crc32(shingle) & 0xffffffff
-    #print(crc)
-    #sys.exit(1)
+    print(crc)
+    print(type(crc))
+    sys.exit(1)
     # Add the hash value to the list of shingles for the current document. 
     # Note that set objects will only add the value to the set if the set 
     # doesn't already contain it. 
