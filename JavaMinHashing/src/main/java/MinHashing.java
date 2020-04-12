@@ -24,19 +24,19 @@ public class MinHashing {
         System.out.println(singlesSets.get("t964").size());
         System.out.println(singlesSets.keySet().size());
 
-//        System.out.println("Print out all keys");
-//        Set<String> keys = singlesSets.keySet();
-//        //print all the keys
-//        for (String key : keys) {
-//            System.out.println(key);
-//        }
+        System.out.println("Print out all keys");
+        Set<String> keys = singlesSets.keySet();
+        //print all the keys
+        for (String key : keys) {
+            System.out.println(key);
+        }
 
-//        System.out.println("Print out all values");
-//        Collection<Set<Long>> values = singlesSets.values();
-//        values.forEach(value -> System.out.println(value));
+        System.out.println("Print out all values");
+        Collection<Set<Long>> values = singlesSets.values();
+        values.forEach(value -> System.out.println(value));
 
-//        writelog wl = new writelog();
-//        wl.writeToAFile("log.txt",singlesSets.toString());
+        Fwritelog wl = new Fwritelog();
+        wl.writeToAFile("log.txt",singlesSets.toString());
 
     }
 }
