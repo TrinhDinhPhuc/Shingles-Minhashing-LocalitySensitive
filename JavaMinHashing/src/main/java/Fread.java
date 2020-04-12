@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class read {
+public class Fread {
      public static void main(String[] args){
          String current_Directory = System.getProperty("user.dir");
          System.out.println(current_Directory);

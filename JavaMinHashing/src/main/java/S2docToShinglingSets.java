@@ -1,8 +1,10 @@
+import jdk.internal.util.xml.impl.Pair;
+
 import java.util.*;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 
-public class docToShinglingSets {
+public class S2docToShinglingSets {
     HashMap<String, Set<Long>> docsAsShingleSets = new HashMap<String, Set<Long>>();
     List<String> docNames = new ArrayList<String>();
     Integer totalShingles = 0;
@@ -52,8 +54,8 @@ public class docToShinglingSets {
 
             //count the number of shingles across all documents
             totalShingles =  totalShingles + words.size()-2;
+            System.out.println(docsAsShingleSets);
         }
-        System.out.println(totalShingles);
         return docsAsShingleSets;
     }
 }

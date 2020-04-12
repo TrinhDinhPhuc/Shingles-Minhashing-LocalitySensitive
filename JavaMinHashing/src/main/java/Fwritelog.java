@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class writelog {
+public class Fwritelog {
     public void create(String filename , String data){
         try {
             File obj = new File(filename);

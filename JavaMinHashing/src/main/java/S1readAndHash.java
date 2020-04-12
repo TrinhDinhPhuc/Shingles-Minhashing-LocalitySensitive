@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.*;
 
-public class readAndHash {
+public class S1readAndHash {
     private Scanner x;
     public Scanner openFile(String fileName){
         try {

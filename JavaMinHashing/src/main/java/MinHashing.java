@@ -10,14 +10,17 @@ public class MinHashing {
 
     public static void main(String[] args){
         //File Truth
-        readAndHash truthF = new readAndHash();
+        S1readAndHash truthF = new S1readAndHash();
         Scanner dataTruth = truthF.openFile(current_Directory+truthFile);
         HashMap<String,String> TruthFile = truthF.hashToDict(dataTruth);
 
-        readAndHash dataF = new readAndHash();
+        S1readAndHash dataF = new S1readAndHash();
         Scanner documents  = dataF.openFile(current_Directory+dataFile);
-        docToShinglingSets objshingles = new docToShinglingSets();
+
+        S2docToShinglingSets objshingles = new S2docToShinglingSets();
         HashMap<String, Set<Long>> singlesSets = objshingles.DocsAsShingleSets(numDocs,documents);
+
+        System.out.println(singlesSets);
 
 //        writelog wl = new writelog();
 //        wl.writeToAFile("log.txt",singlesSets.toString());
