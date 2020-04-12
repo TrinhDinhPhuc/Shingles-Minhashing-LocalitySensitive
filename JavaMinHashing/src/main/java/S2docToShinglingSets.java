@@ -54,7 +54,6 @@ public class S2docToShinglingSets {
 
             //count the number of shingles across all documents
             totalShingles =  totalShingles + words.size()-2;
-            System.out.println(docsAsShingleSets);
         }
         return docsAsShingleSets;
     }
